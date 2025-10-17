@@ -3,9 +3,9 @@ variable "ami_id" {
 }
 
 variable "subnet_id" {
-    
+
 }
 
 variable "instance_type" {
-    default = "t2.micro"
+  default = "t2.micro"
 }
