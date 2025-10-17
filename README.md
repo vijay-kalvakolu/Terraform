@@ -41,3 +41,11 @@ It is best to practice to maintain dev, stage and prod environments
 To create a new dev workspace : **terrafrom workspace new dev**
 To create a new stage workspace : **terrafrom workspace new stage**
 To create a new prod workspace : **terrafrom workspace new prod**
+
+**Terragrunt**:
+ Terragrunt is a wrapper around Terraform that solves manging large infra
+
+**Reducing duplication** Instead of repeating backend configs, provider blocks, and common variables in every Terraform module, you can define them once in a terragrunt.hcl file.
+**Managing remote state** It automatically configures and manages Terraform’s remote backend (like S3 + DynamoDB for AWS, or GCS for GCP).
+**Managing dependencies**  It lets you define module dependencies (for example, your network must be deployed before your database). Terragrunt can run them in order.
+**Handling multiple environments**  You can easily structure your repo like:
