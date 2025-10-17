@@ -48,4 +48,15 @@ To create a new prod workspace : **terrafrom workspace new prod**
 **Reducing duplication** Instead of repeating backend configs, provider blocks, and common variables in every Terraform module, you can define them once in a terragrunt.hcl file.
 **Managing remote state** It automatically configures and manages Terraform’s remote backend (like S3 + DynamoDB for AWS, or GCS for GCP).
 **Managing dependencies**  It lets you define module dependencies (for example, your network must be deployed before your database). Terragrunt can run them in order.
-**Handling multiple environments**  You can easily structure your repo like:
+**Handling multiple environments**  You can easily structure your repo 
+live/
+  ├── dev/
+  │   ├── vpc/
+  │   ├── app/
+  │   └── database/
+  └── prod/
+      ├── vpc/
+      ├── app/
+      └── database/
+
+Documentation for terragrunt: 
