@@ -30,3 +30,13 @@ Terraform apply : The "terraform apply" command is used to apply the changes req
 
 Terraform destroy : The "terraform destroy" command is used to destroy the terraform-manged infrastructure.
 
+WORKSPACES: Terraform lets us to use single source code to apply in different environments. to make it separe, terrafrom has workspaces and for every workspace a different state file is created in order to isolate form other workspaces.
+
+Terrafrom by creates a default workspace while you initialize the repo
+
+To see the workspace : "terraform workspace list"
+It is best to practice to maintain dev, stage and prod environments
+
+To create a new dev workspace : "terrafrom workspace new dev"
+To create a new stage workspace : "terrafrom workspace new stage
+To create a new prod workspace : "terrafrom workspace new prod
