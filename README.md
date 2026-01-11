@@ -21,7 +21,7 @@ BLOCK_TYPE "BLOCK_LABEL" "BLOCK_LABEL" {
 }
 ```
 
-### Example
+ ##### Example
 
 Here is an example of a `resource` block that defines an AWS EC2 instance:
 
